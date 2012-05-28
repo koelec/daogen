@@ -1,0 +1,14 @@
+compileJava.doFirst {
+	File generatedDir
+    	generatedDir = new File(buildDir.toString() + '/generated')
+     	generatedDir.exists() || generatedDir.mkdirs()
+	options.compilerArgs = ['-processor' , 'nl.koelec.daogen.gen.DaoProcessor', '-s', generatedDir.toString()]
+}
+
+dependencies {
+	compile project(':daogen-processor')
+	compile project(':daogen-core')
+      compile 'javax.persistence:persistence-api:1.0', 'org.hibernate:hibernate-entitymanager:3.3.1.ga',
+      'org.slf4j:slf4j-simple:1.6.4', 'javax.transaction:jta:1.1'
+	testCompile 'hsqldb:hsqldb:1.8.0.7'
+}

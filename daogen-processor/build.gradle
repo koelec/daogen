@@ -1,0 +1,6 @@
+sourceSets.main.resources.srcDir 'src/main/java'
+dependencies {
+	compile project(':daogen-core')
+      compile 'javax.persistence:persistence-api:1.0','org.hybridlabs:hybridlabs-beautifier-core:2.1.1',
+		    'org.freemarker:freemarker:2.3.19', 'org.slf4j:slf4j-api:1.6.4'
+    }

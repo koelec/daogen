@@ -1,0 +1,3 @@
+dependencies {
+        compile 'javax.persistence:persistence-api:1.0'
+    }

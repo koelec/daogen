@@ -1,0 +1,23 @@
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility=1.6
+    targetCompatibility=1.6
+    buildDir = "target"
+
+    repositories {
+      mavenCentral()
+      maven {		
+            url "http://fornax-platform.org/nexus/content/repositories/public"
+	}
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.8.2'
+    }
+
+    version = '1.0'
+
+    jar {
+        manifest.attributes provider: 'gradle'
+    }
+}
