@@ -1,4 +1,4 @@
 daogen
 ======
 
-SImple library to generate Java JPA Dao's from Dao interface type annotated with query string.
+Simple library to generate Java JPA Dao's from Dao interface type annotated with query string.
