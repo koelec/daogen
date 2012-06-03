@@ -93,4 +93,4 @@ The queries-orm file is referenced from persistence.xml like so:
 	<class>nl.koelec.daogen.sample.Customer</class>
 	<class>nl.koelec.daogen.sample.Order</class>
 	
-
+see http://koelec.blogspot.nl/2012/06/daogen-generator-for-jpa-dao.html for more info
